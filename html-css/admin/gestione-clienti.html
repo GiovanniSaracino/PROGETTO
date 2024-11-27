@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Clienti</title>
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+    <link rel="stylesheet" href="../css/gestione-clienti.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Gestione Clienti</h1>
+            <div class="header-actions">
+                <button onclick="window.location.href='dashboard.html'" class="back-btn">
+                    Torna alla Dashboard
+                </button>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </header>
+        
+        <main>
+            <section class="clients-section">
+                <h2>Lista Clienti</h2>
+                <div class="placeholder-content">
+                    <p>Caricamento in corso...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/gestione-clienti.js"></script>
+</body>
+</html>

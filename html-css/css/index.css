@@ -1,0 +1,33 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Sfondo nero */
+    color: #fff; /* Testo bianco per contrasto */
+    display: flex; /* Uso di Flexbox per centrare il contenuto */
+    flex-direction: column; /* Disposizione verticale */
+    justify-content: center; /* Centrare verticalmente */
+    align-items: center; /* Centrare orizzontalmente */
+    height: 100vh; /* Altezza del viewport */
+}
+
+h1 {
+    font-size: 2.5rem; /* Dimensione del font del titolo */
+    margin-bottom: 20px; /* Spazio sotto il titolo */
+    text-align: center; /* Centra il testo */
+}
+
+a {
+    color: #00bcd4; /* Colore del link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-size: 1.2rem; /* Dimensione del font del link */
+    padding: 10px 20px; /* Padding per il link */
+    border: 2px solid #00bcd4; /* Bordo del link */
+    border-radius: 5px; /* Angoli arrotondati */
+    transition: background-color 0.3s, color 0.3s; /* Effetto di transizione */
+}
+
+a:hover {
+    background-color: #00bcd4; /* Sfondo blu chiaro al passaggio del mouse */
+    color: #000; /* Testo nero al passaggio del mouse */
+}

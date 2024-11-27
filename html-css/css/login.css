@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Colore di sfondo di riserva */
+}
+
+/* Contenitore del login */
+.login {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    height: 100%;
+    background: url("https://cdn.leonardo.ai/users/e323cd84-e226-4528-8f28-b6ca69fff6cc/generations/e640835b-d74b-4354-9331-79877c06c892/AlbedoBase_XL_Sfondo_usabile_come_login_per_un_sistema_di_manu_1.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+
+/* Form */
+form {
+    background: rgba(0, 0, 0, 0.5); /* Sfondo trasparente */
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px; /* Larghezza massima per dispositivi grandi */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.3);
+    height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    background: rgba(0, 0, 0, 1);
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.66);
+}
+
+#errorMessage {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}

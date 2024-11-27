@@ -1,0 +1,164 @@
+/* Stili base ereditati da dashboard.css */
+@import 'dashboard.css';
+
+/* Stili per la modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Stili per gli stati dei ticket */
+.status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.status.aperto {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+.status.in_lavorazione {
+    background-color: #2196f3;
+    color: white;
+}
+
+.status.chiuso {
+    background-color: #4caf50;
+    color: white;
+}
+
+.update-btn {
+    background-color: #2196f3;
+}
+
+.update-btn:hover {
+    background-color: #1976d2;
+}
+
+/* Stili per la sezione clienti */
+.clients-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.client-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.client-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.client-info {
+    margin-bottom: 1rem;
+}
+
+.client-info p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.client-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Stili per il form cliente */
+#clientForm input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+}
+
+#clientForm input:focus {
+    border-color: #2196f3;
+    outline: none;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Aggiungi questi stili per il nav-btn quando è un link */
+.nav-btn {
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Assicurati che il link si comporti come un bottone */
+a.nav-btn {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: normal;
+    text-align: center;
+} 

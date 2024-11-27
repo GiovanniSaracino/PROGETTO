@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Utente</title>
+    <link rel="stylesheet" href="../css/user-dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Dashboard Utente</h1>
+            <div class="user-info">
+                <span id="userName"></span>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </header>
+        
+        <main>
+            <section class="tickets-section">
+                <h2>I Miei Ticket</h2>
+                <button onclick="openNewTicketModal()" class="new-ticket-btn">Nuovo Ticket</button>
+                <div id="ticketsList" class="tickets-list">
+                    <!-- I ticket verranno caricati dinamicamente qui -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal per nuovo ticket -->
+    <div id="newTicketModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Crea Nuovo Ticket</h2>
+            <form id="newTicketForm">
+                <div class="form-group">
+                    <label for="ticketDescription">Descrizione:</label>
+                    <textarea id="ticketDescription" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Crea Ticket</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/user-dashboard.js"></script>
+</body>
+</html> 
